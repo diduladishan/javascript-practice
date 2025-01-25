@@ -206,6 +206,23 @@
 
 // console.log(clonedPerson);
 
+// let person = {
+//   name: "Alice",
+//   age: 25,
+//   job: "Engineer",
+//   address: { city: "New York", zip: "10001" },
+// };
+
+// let deepClonedPerson = JSON.parse(JSON.stringify(person));
+
+// deepClonedPerson.name = "Bob";
+// deepClonedPerson.address.city = "Los Angeles";
+
+// console.log(person.name);
+// console.log(deepClonedPerson.name);
+// console.log(person.address.city);
+// console.log(deepClonedPerson.address.city);
+
 let person = {
   name: "Alice",
   age: 25,
@@ -213,7 +230,7 @@ let person = {
   address: { city: "New York", zip: "10001" },
 };
 
-let deepClonedPerson = JSON.parse(JSON.stringify(person));
+let deepClonedPerson = structuredClone(person);
 
 deepClonedPerson.name = "Bob";
 deepClonedPerson.address.city = "Los Angeles";
