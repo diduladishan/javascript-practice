@@ -196,12 +196,29 @@
 // console.log(original.address.city);
 // console.log(shallowCopy.address.city); // "Los Angeles" (Nested object is shared)
 
+// let person = {
+//   name: "Alice",
+//   age: 25,
+//   job: "Engineer",
+// };
+
+// let clonedPerson = { ...person };
+
+// console.log(clonedPerson);
+
 let person = {
   name: "Alice",
   age: 25,
   job: "Engineer",
+  address: { city: "New York", zip: "10001" },
 };
 
-let clonedPerson = { ...person };
+let deepClonedPerson = JSON.parse(JSON.stringify(person));
 
-console.log(clonedPerson);
+deepClonedPerson.name = "Bob";
+deepClonedPerson.address.city = "Los Angeles";
+
+console.log(person.name);
+console.log(deepClonedPerson.name);
+console.log(person.address.city);
+console.log(deepClonedPerson.address.city);
