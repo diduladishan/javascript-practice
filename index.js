@@ -176,22 +176,32 @@
 // console.log(me);
 // console.log(ae);
 
-let original = {
+// let original = {
+//   name: "Alice",
+//   age: 25,
+//   address: {
+//     city: "New York",
+//     zip: "10001",
+//   },
+// };
+
+// let shallowCopy = Object.assign({}, original);
+
+// // Modify the shallow copy
+// shallowCopy.name = "Bob"; // Changing a top-level property
+// shallowCopy.address.city = "Los Angeles"; // Changing a nested property
+
+// console.log(original.name); // "Alice" (Top-level properties are independent)
+// console.log(shallowCopy.name);
+// console.log(original.address.city);
+// console.log(shallowCopy.address.city); // "Los Angeles" (Nested object is shared)
+
+let person = {
   name: "Alice",
   age: 25,
-  address: {
-    city: "New York",
-    zip: "10001",
-  },
+  job: "Engineer",
 };
 
-let shallowCopy = Object.assign({}, original);
+let clonedPerson = { ...person };
 
-// Modify the shallow copy
-shallowCopy.name = "Bob"; // Changing a top-level property
-shallowCopy.address.city = "Los Angeles"; // Changing a nested property
-
-console.log(original.name); // "Alice" (Top-level properties are independent)
-console.log(shallowCopy.name);
-console.log(original.address.city);
-console.log(shallowCopy.address.city); // "Los Angeles" (Nested object is shared)
+console.log(clonedPerson);
