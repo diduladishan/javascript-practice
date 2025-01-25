@@ -223,19 +223,27 @@
 // console.log(person.address.city);
 // console.log(deepClonedPerson.address.city);
 
-let person = {
-  name: "Alice",
-  age: 25,
-  job: "Engineer",
-  address: { city: "New York", zip: "10001" },
+// let person = {
+//   name: "Alice",
+//   age: 25,
+//   job: "Engineer",
+//   address: { city: "New York", zip: "10001" },
+// };
+
+// let deepClonedPerson = structuredClone(person);
+
+// deepClonedPerson.name = "Bob";
+// deepClonedPerson.address.city = "Los Angeles";
+
+// console.log(person.name);
+// console.log(deepClonedPerson.name);
+// console.log(person.address.city);
+// console.log(deepClonedPerson.address.city);
+
+greet();
+
+const greet = function () {
+  console.log("Hello, World!");
 };
 
-let deepClonedPerson = structuredClone(person);
-
-deepClonedPerson.name = "Bob";
-deepClonedPerson.address.city = "Los Angeles";
-
-console.log(person.name);
-console.log(deepClonedPerson.name);
-console.log(person.address.city);
-console.log(deepClonedPerson.address.city);
+// greet(); // Works! Output: "Hello, World!"
