@@ -315,11 +315,22 @@
 // const greeter = greet("Hey");
 // greeter("Jonas");
 
-const greet = (greeting) => {
-  return (name) => {
-    console.log(`${greeting} ${name}`);
-  };
+// const greet = (greeting) => {
+//   return (name) => {
+//     console.log(`${greeting} ${name}`);
+//   };
+// };
+
+// const greeter = greet("Hey");
+// greeter("Schedtmann");
+
+const jonas = {
+  name: "Jonas",
+  year: 1989,
+  calcAge: function () {
+    return 2037 - this.year;
+  },
 };
 
-const greeter = greet("Hey");
-greeter("Schedtmann");
+const result = jonas.calcAge();
+console.log(result);
