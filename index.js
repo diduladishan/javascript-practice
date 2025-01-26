@@ -240,10 +240,86 @@
 // console.log(person.address.city);
 // console.log(deepClonedPerson.address.city);
 
-greet();
+// greet();
 
-const greet = function () {
-  console.log("Hello, World!");
-};
+// const greet = function () {
+//   console.log("Hello, World!");
+// };
 
 // greet(); // Works! Output: "Hello, World!"
+
+// let bookings = [];
+
+// let booking = {
+//   flightNum: 1,
+//   numPassengers: 2,
+//   price: 3,
+// };
+
+// bookings.push(booking);
+
+// console.log(bookings);
+
+// function test1(name, age, job) {
+//   const testObject = {
+//     name,
+//     age,
+//     job,
+//   };
+// }
+
+// test1("Didula", 29, "SE");
+// console.log(testObject);
+
+// function testScope() {
+//   if (true) {
+//     var x = "var variable";
+//     let y = "let variable";
+//     const z = "const varaible";
+//   }
+
+//   console.log(y);
+// }
+// testScope();
+
+// const bookings = [];
+
+// const createBooking = function (flightNum, numPassengers = 1, price = 199) {
+//   const booking = {
+//     flightNum,
+//     numPassengers,
+//     price,
+//   };
+
+//   console.log(bookings);
+//   bookings.push(booking);
+// };
+
+// createBooking("LH123");
+
+// let name = "Didula";
+
+// let nameTwo = "Jason";
+
+// name = nameTwo;
+
+// console.log(name);
+// console.log(nameTwo);
+
+// function greet(greeting) {
+//   return function (name) {
+//     console.log(`${greeting} ${name}`);
+//   };
+// }
+
+// const greeter = greet("Hey");
+// greeter("Jonas");
+
+const greet = (greeting) => {
+  return (name) => {
+    console.log(`${greeting} ${name}`);
+  };
+};
+
+const greeter = greet("Hey");
+greeter("Schedtmann");
