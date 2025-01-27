@@ -419,3 +419,14 @@ book.apply(euroWings, flightArray);
 
 const bookEW = book.bind(euroWings);
 bookEW(23, "Steven Williams");
+
+lufthansa.planes = 300;
+lufthansa.buyPlane = function () {
+  console.log(this);
+
+  this.planes++;
+  console.log(this.planes);
+};
+
+lufthansa.buyPlane();
+console.log(lufthansa);
