@@ -1,3 +1,5 @@
+"use strict";
+
 // var x = 10;
 // var x = 20;
 // console.log(x);
@@ -324,13 +326,89 @@
 // const greeter = greet("Hey");
 // greeter("Schedtmann");
 
-const jonas = {
-  name: "Jonas",
-  year: 1989,
-  calcAge: function () {
-    return 2037 - this.year;
+// const jonas = {
+//   name: "Jonas",
+//   year: 1989,
+//   calcAge: function () {
+//     return 2037 - this.year;
+//   },
+// };
+
+// const result = jonas.calcAge();
+// console.log(result);
+
+// function greet() {
+//   return this;
+// }
+
+// const result = greet();
+// console.log(result);
+
+// const greetMain = () => {
+//   const greet = () => {
+//     return 21;
+//   };
+//   return this;
+// };
+
+// const result = greetMain()();
+// console.log(result);
+
+// const obj = {
+//   name: "Alice",
+//   greet: () => {
+//     console.log(this.name);
+//   },
+// };
+
+// obj.greet();
+
+// console.log(this);
+
+// const jonas = {
+//   year: 1991,
+//   calcAge: 1991,
+//   calcAge: function () {
+//     console.log(this);
+//     console.log(2037 - this.year);
+//   },
+// };
+
+// jonas.calcAge();
+
+// const matilda = {
+//   year: 2017,
+// };
+
+// matilda.calcAge = jonas.calcAge;
+// matilda.calcAge();
+
+const lufthansa = {
+  airline: "Lufthansa",
+  iataCode: "LH",
+  bookings: [],
+  book(flightNum, name) {
+    console.log(
+      `${name} booked a seat on ${this.airline} flight ${this.iataCode}${flightNum}`
+    );
+
+    this.bookings.push({ flight: `${this.iataCode} ${flightNum}`, name });
   },
 };
 
-const result = jonas.calcAge();
-console.log(result);
+lufthansa.book(239, "Jonas Schmedtmann");
+lufthansa.book(635, "John Smith");
+console.log(lufthansa);
+
+const euroWings = {
+  name: "Eurowings",
+  iataCode: "EW",
+  bookings: [],
+};
+
+const book = lufthansa.book;
+
+book.call(euroWings, 23, "Sarah Williams");
+console.log("----------------------------");
+console.log(lufthansa);
+console.log(euroWings);
