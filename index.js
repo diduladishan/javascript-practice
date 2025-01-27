@@ -397,18 +397,25 @@ const lufthansa = {
 };
 
 lufthansa.book(239, "Jonas Schmedtmann");
-lufthansa.book(635, "John Smith");
-console.log(lufthansa);
+// lufthansa.book(635, "John Smith");
+// console.log(lufthansa);
 
 const euroWings = {
-  name: "Eurowings",
+  airline: "Eurowings",
   iataCode: "EW",
   bookings: [],
 };
 
 const book = lufthansa.book;
 
-book.call(euroWings, 23, "Sarah Williams");
 console.log("----------------------------");
-console.log(lufthansa);
+
+book.call(euroWings, 23, "Sarah Williams");
+
 console.log(euroWings);
+
+const flightArray = [20, "Geroge Baily"];
+book.apply(euroWings, flightArray);
+
+const bookEW = book.bind(euroWings);
+bookEW(23, "Steven Williams");
