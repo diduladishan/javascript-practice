@@ -1,432 +1,479 @@
-"use strict";
+// "use strict";
 
-// var x = 10;
-// var x = 20;
-// console.log(x);
+// // var x = 10;
+// // var x = 20;
+// // console.log(x);
 
-// let y = 30;
-// let y = 40;
+// // let y = 30;
+// // let y = 40;
 
-// console.log(y);
+// // console.log(y);
 
-// const z = 50;
-// const z = 60;
-// console.log(z);
+// // const z = 50;
+// // const z = 60;
+// // console.log(z);
 
-// console.log(c);
-// const c = 10;
+// // console.log(c);
+// // const c = 10;
 
-// greet();
+// // greet();
 
-// var greet = function () {
-//   console.log("hello");
-// };
+// // var greet = function () {
+// //   console.log("hello");
+// // };
 
-// greet();
+// // greet();
 
-// var greet = () => {
-//   console.log("hello");
-// };
+// // var greet = () => {
+// //   console.log("hello");
+// // };
 
-// console.log(5 === "5");
+// // console.log(5 === "5");
 
-// console.log(null === undefined);
-// console.log([1, 2] == 1, 2);
+// // console.log(null === undefined);
+// // console.log([1, 2] == 1, 2);
 
-// console.log(false, 2);
+// // console.log(false, 2);
 
-// if (NaN) {
-//   console.log("This will not run");
-// } else {
-//   console.log("NaN is falsy");
-// }
+// // if (NaN) {
+// //   console.log("This will not run");
+// // } else {
+// //   console.log("NaN is falsy");
+// // }
 
-// console.log("abc" / 2);
+// // console.log("abc" / 2);
 
-// console.log(NaN !== NaN);
+// // console.log(NaN !== NaN);
 
-// let x;
-// console.log(x);
+// // let x;
+// // console.log(x);
 
-// function greet(name) {
-//   console.log(name);
-// }
-// greet();
+// // function greet(name) {
+// //   console.log(name);
+// // }
+// // greet();
 
-// const obj = {};
-// console.log(obj.key);
+// // const obj = {};
+// // console.log(obj.key);
 
-// console.log(typeof 4);
+// // console.log(typeof 4);
 
-// console.log(typeof null);
-// console.log(typeof undefined);
+// // console.log(typeof null);
+// // console.log(typeof undefined);
 
-// let x = null;
-// console.log(x == null);
+// // let x = null;
+// // console.log(x == null);
 
-// let numbers = [1, 2, 3];
-// console.log(Array.isArray(numbers));
+// // let numbers = [1, 2, 3];
+// // console.log(Array.isArray(numbers));
 
-// console.log(Array.isArray(123));
-// console.log(Array.isArray("Hello"));
-// console.log(Array.isArray({ a: 1 }));
+// // console.log(Array.isArray(123));
+// // console.log(Array.isArray("Hello"));
+// // console.log(Array.isArray({ a: 1 }));
 
-// let fruits = ["Apple", "Banana", "Cherry"];
-// console.log(fruits);
+// // let fruits = ["Apple", "Banana", "Cherry"];
+// // console.log(fruits);
 
-// const years = new Array(1991, 1992, 1993);
-// console.log(years);
+// // const years = new Array(1991, 1992, 1993);
+// // console.log(years);
 
-// const arr = [1, 2, 3, 4];
-// arr.push(5, 8);
+// // const arr = [1, 2, 3, 4];
+// // arr.push(5, 8);
 
-// console.log(arr);
+// // console.log(arr);
 
-// const arr = [5, 1, 2, 3, 4];
-// arr.shift();
+// // const arr = [5, 1, 2, 3, 4];
+// // arr.shift();
 
-// console.log(arr);
+// // console.log(arr);
 
-// let arr = [1, 2, 3, 4, 5];
-// let removed = arr.splice(1, 3, 22, 33, 44);
-// console.log(arr);
-// console.log(removed);
+// // let arr = [1, 2, 3, 4, 5];
+// // let removed = arr.splice(1, 3, 22, 33, 44);
+// // console.log(arr);
+// // console.log(removed);
 
-// let arrayOne = [1, 2, 3, 4];
-// let arrayTwo = ["a", "b", "c"];
+// // let arrayOne = [1, 2, 3, 4];
+// // let arrayTwo = ["a", "b", "c"];
 
-// let newArray = arrayOne.concat(arrayTwo);
-// console.log(newArray);
+// // let newArray = arrayOne.concat(arrayTwo);
+// // console.log(newArray);
 
-// let numbers = [1, 2, 3, 4];
-// numbers.forEach(function (number, index, array1) {
-//   console.log(number, index, array1);
-// });
-
-// const movements = [200, 450, -400, 3000];
-
-// movements.forEach(function (movement) {
-//   const result = movement * 2;
-//   console.log(result);
-// });
-// console.log(movements);
-// let numbers = [1, 2, 3, 4, 5];
-
-// let newNumbers = numbers.map(function (num, index, array) {
-//   return array;
-// });
-
-// console.log(newNumbers);
-// console.log(numbers);
+// // let numbers = [1, 2, 3, 4];
+// // numbers.forEach(function (number, index, array1) {
+// //   console.log(number, index, array1);
+// // });
+
+// // const movements = [200, 450, -400, 3000];
+
+// // movements.forEach(function (movement) {
+// //   const result = movement * 2;
+// //   console.log(result);
+// // });
+// // console.log(movements);
+// // let numbers = [1, 2, 3, 4, 5];
+
+// // let newNumbers = numbers.map(function (num, index, array) {
+// //   return array;
+// // });
+
+// // console.log(newNumbers);
+// // console.log(numbers);
 
-// let movements = [10, -3, 5, 2, -6];
+// // let movements = [10, -3, 5, 2, -6];
 
-// let positiveNumbers = movements.filter(function (mov) {
-//   return mov > 0;
-// });
-
-// console.log(positiveNumbers);
+// // let positiveNumbers = movements.filter(function (mov) {
+// //   return mov > 0;
+// // });
+
+// // console.log(positiveNumbers);
 
-// const numbers = [4, -3, 5, -2, 1];
-
-// const result = numbers.reduce(function (accumulator, curr, i, arr) {
-//   console.log(accumulator, curr);
-//   return accumulator + curr;
-// }, 0);
-
-// console.log(result);
-
-// let movements = [4, -3, 5, -2, 1];
+// // const numbers = [4, -3, 5, -2, 1];
+
+// // const result = numbers.reduce(function (accumulator, curr, i, arr) {
+// //   console.log(accumulator, curr);
+// //   return accumulator + curr;
+// // }, 0);
+
+// // console.log(result);
+
+// // let movements = [4, -3, 5, -2, 1];
 
-// let max = movements.reduce((acc, mov) => {
-//   console.log(`This is accumulator value ${acc}. this is mov value ${mov}`);
-//   if (acc > mov) {
-//     return acc;
-//   } else return mov;
-// }, movements[0]);
+// // let max = movements.reduce((acc, mov) => {
+// //   console.log(`This is accumulator value ${acc}. this is mov value ${mov}`);
+// //   if (acc > mov) {
+// //     return acc;
+// //   } else return mov;
+// // }, movements[0]);
 
-// console.log(max);
+// // console.log(max);
 
-// let person = {
-//   name: "Alice",
-//   age: 25,
-//   job: "Engineer",
-// };
+// // let person = {
+// //   name: "Alice",
+// //   age: 25,
+// //   job: "Engineer",
+// // };
 
-// for (let key in person) {
-//   console.log(key, ":", person[key]);
-// }
+// // for (let key in person) {
+// //   console.log(key, ":", person[key]);
+// // }
 
-// let person = {
-//   name: "Alice",
-//   age: 25,
-//   job: "Engineer",
-// };
+// // let person = {
+// //   name: "Alice",
+// //   age: 25,
+// //   job: "Engineer",
+// // };
 
-// Object.keys(person).forEach(function (key) {
-//   console.log(key, ":", person[key]);
-// });
+// // Object.keys(person).forEach(function (key) {
+// //   console.log(key, ":", person[key]);
+// // });
 
-// let person = {
-//   name: "Alice",
-//   age: 23,
-//   job: "Teacher",
-// };
+// // let person = {
+// //   name: "Alice",
+// //   age: 23,
+// //   job: "Teacher",
+// // };
 
-// let { me, ae, job } = person;
+// // let { me, ae, job } = person;
 
-// console.log(me);
-// console.log(ae);
+// // console.log(me);
+// // console.log(ae);
 
-// let original = {
-//   name: "Alice",
-//   age: 25,
-//   address: {
-//     city: "New York",
-//     zip: "10001",
-//   },
-// };
+// // let original = {
+// //   name: "Alice",
+// //   age: 25,
+// //   address: {
+// //     city: "New York",
+// //     zip: "10001",
+// //   },
+// // };
 
-// let shallowCopy = Object.assign({}, original);
+// // let shallowCopy = Object.assign({}, original);
 
-// // Modify the shallow copy
-// shallowCopy.name = "Bob"; // Changing a top-level property
-// shallowCopy.address.city = "Los Angeles"; // Changing a nested property
-
-// console.log(original.name); // "Alice" (Top-level properties are independent)
-// console.log(shallowCopy.name);
-// console.log(original.address.city);
-// console.log(shallowCopy.address.city); // "Los Angeles" (Nested object is shared)
+// // // Modify the shallow copy
+// // shallowCopy.name = "Bob"; // Changing a top-level property
+// // shallowCopy.address.city = "Los Angeles"; // Changing a nested property
+
+// // console.log(original.name); // "Alice" (Top-level properties are independent)
+// // console.log(shallowCopy.name);
+// // console.log(original.address.city);
+// // console.log(shallowCopy.address.city); // "Los Angeles" (Nested object is shared)
 
-// let person = {
-//   name: "Alice",
-//   age: 25,
-//   job: "Engineer",
-// };
+// // let person = {
+// //   name: "Alice",
+// //   age: 25,
+// //   job: "Engineer",
+// // };
 
-// let clonedPerson = { ...person };
+// // let clonedPerson = { ...person };
 
-// console.log(clonedPerson);
+// // console.log(clonedPerson);
 
-// let person = {
-//   name: "Alice",
-//   age: 25,
-//   job: "Engineer",
-//   address: { city: "New York", zip: "10001" },
-// };
+// // let person = {
+// //   name: "Alice",
+// //   age: 25,
+// //   job: "Engineer",
+// //   address: { city: "New York", zip: "10001" },
+// // };
 
-// let deepClonedPerson = JSON.parse(JSON.stringify(person));
+// // let deepClonedPerson = JSON.parse(JSON.stringify(person));
 
-// deepClonedPerson.name = "Bob";
-// deepClonedPerson.address.city = "Los Angeles";
+// // deepClonedPerson.name = "Bob";
+// // deepClonedPerson.address.city = "Los Angeles";
 
-// console.log(person.name);
-// console.log(deepClonedPerson.name);
-// console.log(person.address.city);
-// console.log(deepClonedPerson.address.city);
+// // console.log(person.name);
+// // console.log(deepClonedPerson.name);
+// // console.log(person.address.city);
+// // console.log(deepClonedPerson.address.city);
 
-// let person = {
-//   name: "Alice",
-//   age: 25,
-//   job: "Engineer",
-//   address: { city: "New York", zip: "10001" },
-// };
+// // let person = {
+// //   name: "Alice",
+// //   age: 25,
+// //   job: "Engineer",
+// //   address: { city: "New York", zip: "10001" },
+// // };
 
-// let deepClonedPerson = structuredClone(person);
+// // let deepClonedPerson = structuredClone(person);
 
-// deepClonedPerson.name = "Bob";
-// deepClonedPerson.address.city = "Los Angeles";
+// // deepClonedPerson.name = "Bob";
+// // deepClonedPerson.address.city = "Los Angeles";
 
-// console.log(person.name);
-// console.log(deepClonedPerson.name);
-// console.log(person.address.city);
-// console.log(deepClonedPerson.address.city);
+// // console.log(person.name);
+// // console.log(deepClonedPerson.name);
+// // console.log(person.address.city);
+// // console.log(deepClonedPerson.address.city);
 
-// greet();
+// // greet();
 
-// const greet = function () {
-//   console.log("Hello, World!");
-// };
+// // const greet = function () {
+// //   console.log("Hello, World!");
+// // };
 
-// greet(); // Works! Output: "Hello, World!"
+// // greet(); // Works! Output: "Hello, World!"
 
-// let bookings = [];
+// // let bookings = [];
 
-// let booking = {
-//   flightNum: 1,
-//   numPassengers: 2,
-//   price: 3,
-// };
+// // let booking = {
+// //   flightNum: 1,
+// //   numPassengers: 2,
+// //   price: 3,
+// // };
 
-// bookings.push(booking);
-
-// console.log(bookings);
+// // bookings.push(booking);
+
+// // console.log(bookings);
 
-// function test1(name, age, job) {
-//   const testObject = {
-//     name,
-//     age,
-//     job,
-//   };
-// }
+// // function test1(name, age, job) {
+// //   const testObject = {
+// //     name,
+// //     age,
+// //     job,
+// //   };
+// // }
 
-// test1("Didula", 29, "SE");
-// console.log(testObject);
+// // test1("Didula", 29, "SE");
+// // console.log(testObject);
+
+// // function testScope() {
+// //   if (true) {
+// //     var x = "var variable";
+// //     let y = "let variable";
+// //     const z = "const varaible";
+// //   }
+
+// //   console.log(y);
+// // }
+// // testScope();
 
-// function testScope() {
-//   if (true) {
-//     var x = "var variable";
-//     let y = "let variable";
-//     const z = "const varaible";
-//   }
+// // const bookings = [];
 
-//   console.log(y);
-// }
-// testScope();
+// // const createBooking = function (flightNum, numPassengers = 1, price = 199) {
+// //   const booking = {
+// //     flightNum,
+// //     numPassengers,
+// //     price,
+// //   };
+
+// //   console.log(bookings);
+// //   bookings.push(booking);
+// // };
+
+// // createBooking("LH123");
+
+// // let name = "Didula";
+
+// // let nameTwo = "Jason";
+
+// // name = nameTwo;
+
+// // console.log(name);
+// // console.log(nameTwo);
+
+// // function greet(greeting) {
+// //   return function (name) {
+// //     console.log(`${greeting} ${name}`);
+// //   };
+// // }
 
-// const bookings = [];
+// // const greeter = greet("Hey");
+// // greeter("Jonas");
 
-// const createBooking = function (flightNum, numPassengers = 1, price = 199) {
-//   const booking = {
-//     flightNum,
-//     numPassengers,
-//     price,
-//   };
+// // const greet = (greeting) => {
+// //   return (name) => {
+// //     console.log(`${greeting} ${name}`);
+// //   };
+// // };
 
-//   console.log(bookings);
-//   bookings.push(booking);
-// };
+// // const greeter = greet("Hey");
+// // greeter("Schedtmann");
 
-// createBooking("LH123");
+// // const jonas = {
+// //   name: "Jonas",
+// //   year: 1989,
+// //   calcAge: function () {
+// //     return 2037 - this.year;
+// //   },
+// // };
 
-// let name = "Didula";
+// // const result = jonas.calcAge();
+// // console.log(result);
 
-// let nameTwo = "Jason";
+// // function greet() {
+// //   return this;
+// // }
 
-// name = nameTwo;
+// // const result = greet();
+// // console.log(result);
 
-// console.log(name);
-// console.log(nameTwo);
+// // const greetMain = () => {
+// //   const greet = () => {
+// //     return 21;
+// //   };
+// //   return this;
+// // };
 
-// function greet(greeting) {
-//   return function (name) {
-//     console.log(`${greeting} ${name}`);
-//   };
-// }
+// // const result = greetMain()();
+// // console.log(result);
 
-// const greeter = greet("Hey");
-// greeter("Jonas");
+// // const obj = {
+// //   name: "Alice",
+// //   greet: () => {
+// //     console.log(this.name);
+// //   },
+// // };
 
-// const greet = (greeting) => {
-//   return (name) => {
-//     console.log(`${greeting} ${name}`);
-//   };
-// };
+// // obj.greet();
 
-// const greeter = greet("Hey");
-// greeter("Schedtmann");
+// // console.log(this);
 
-// const jonas = {
-//   name: "Jonas",
-//   year: 1989,
-//   calcAge: function () {
-//     return 2037 - this.year;
-//   },
-// };
+// // const jonas = {
+// //   year: 1991,
+// //   calcAge: 1991,
+// //   calcAge: function () {
+// //     console.log(this);
+// //     console.log(2037 - this.year);
+// //   },
+// // };
 
-// const result = jonas.calcAge();
-// console.log(result);
+// // jonas.calcAge();
 
-// function greet() {
-//   return this;
-// }
+// // const matilda = {
+// //   year: 2017,
+// // };
 
-// const result = greet();
-// console.log(result);
+// // matilda.calcAge = jonas.calcAge;
+// // matilda.calcAge();
 
-// const greetMain = () => {
-//   const greet = () => {
-//     return 21;
-//   };
-//   return this;
-// };
+// // const lufthansa = {
+// //   airline: "Lufthansa",
+// //   iataCode: "LH",
+// //   bookings: [],
+// //   book(flightNum, name) {
+// //     console.log(
+// //       `${name} booked a seat on ${this.airline} flight ${this.iataCode}${flightNum}`
+// //     );
 
-// const result = greetMain()();
-// console.log(result);
+// //     this.bookings.push({ flight: `${this.iataCode} ${flightNum}`, name });
+// //   },
+// // };
 
-// const obj = {
-//   name: "Alice",
-//   greet: () => {
-//     console.log(this.name);
-//   },
-// };
+// // lufthansa.book(239, "Jonas Schmedtmann");
+// // // lufthansa.book(635, "John Smith");
+// // // console.log(lufthansa);
 
-// obj.greet();
+// // const euroWings = {
+// //   airline: "Eurowings",
+// //   iataCode: "EW",
+// //   bookings: [],
+// // };
 
-// console.log(this);
+// // const book = lufthansa.book;
 
-// const jonas = {
-//   year: 1991,
-//   calcAge: 1991,
-//   calcAge: function () {
+// // console.log("----------------------------");
+
+// // book.call(euroWings, 23, "Sarah Williams");
+
+// // console.log(euroWings);
+
+// // const flightArray = [20, "Geroge Baily"];
+// // book.apply(euroWings, flightArray);
+
+// // const bookEW = book.bind(euroWings);
+// // bookEW(23, "Steven Williams");
+
+// // lufthansa.planes = 300;
+// // lufthansa.buyPlane = function () {
+// //   console.log(this);
+
+// //   this.planes++;
+// //   console.log(this.planes);
+// // };
+
+// // lufthansa.buyPlane();
+// // console.log(lufthansa);
+
+// const person = {
+//   name: "Daniru",
+//   age: 22,
+//   job: "SE",
+//   book: function details() {
+//     // console.log(`${this.name}`);
 //     console.log(this);
-//     console.log(2037 - this.year);
 //   },
 // };
 
-// jonas.calcAge();
+// person.book();
+// console.log(person.book);
 
-// const matilda = {
-//   year: 2017,
+// const person2 = {
+//   name: "Didula",
+//   age: 29,
+//   job: "FEd",
+//   book: function details() {
+//     // console.log(`${this.name}`);
+//     console.log(this);
+//   },
 // };
 
-// matilda.calcAge = jonas.calcAge;
-// matilda.calcAge();
+// person2.book();
+// // console.log(10);
 
-const lufthansa = {
-  airline: "Lufthansa",
-  iataCode: "LH",
-  bookings: [],
-  book(flightNum, name) {
-    console.log(
-      `${name} booked a seat on ${this.airline} flight ${this.iataCode}${flightNum}`
-    );
+// function person(name, age) {
+//   console.log(`my name is ${name} and I'm ${age} years old.`);
+//   console.log(this);
+// }
 
-    this.bookings.push({ flight: `${this.iataCode} ${flightNum}`, name });
-  },
-};
+// const result = person("Didula", 29);
 
-lufthansa.book(239, "Jonas Schmedtmann");
-// lufthansa.book(635, "John Smith");
-// console.log(lufthansa);
+// const person2 = (nameTwo, ageTwo) => {
+//   console.log(`my name is ${nameTwo} and I'm ${ageTwo} years old.`);
+//   console.log(this);
+// };
 
-const euroWings = {
-  airline: "Eurowings",
-  iataCode: "EW",
-  bookings: [],
-};
+// const person3 = function (sdsad, dad ) {
+//   dasd
+// }
 
-const book = lufthansa.book;
+//
 
-console.log("----------------------------");
-
-book.call(euroWings, 23, "Sarah Williams");
-
-console.log(euroWings);
-
-const flightArray = [20, "Geroge Baily"];
-book.apply(euroWings, flightArray);
-
-const bookEW = book.bind(euroWings);
-bookEW(23, "Steven Williams");
-
-lufthansa.planes = 300;
-lufthansa.buyPlane = function () {
-  console.log(this);
-
-  this.planes++;
-  console.log(this.planes);
-};
-
-lufthansa.buyPlane();
-console.log(lufthansa);
+console.log(namew);
+var namew = "Daniru";
