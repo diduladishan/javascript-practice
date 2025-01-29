@@ -457,23 +457,21 @@
 // person2.book();
 // // console.log(10);
 
-// function person(name, age) {
-//   console.log(`my name is ${name} and I'm ${age} years old.`);
-//   console.log(this);
-// }
+function person(name, age) {
+  console.log(`my name is ${name} and I'm ${age} years old.`);
+  console.log(this);
+}
 
-// const result = person("Didula", 29);
+const result = person("Didula", 29);
 
-// const person2 = (nameTwo, ageTwo) => {
-//   console.log(`my name is ${nameTwo} and I'm ${ageTwo} years old.`);
-//   console.log(this);
-// };
+const person2 = (nameTwo, ageTwo) => {
+  console.log(`my name is ${nameTwo} and I'm ${ageTwo} years old.`);
+  console.log(this);
+};
 
-// const person3 = function (sdsad, dad ) {
-//   dasd
-// }
-
-//
+const person3 = function (sdsad, dad) {
+  dasd;
+};
 
 console.log(namew);
-var namew = "Daniru";
+var namew = "Daniru Din";
