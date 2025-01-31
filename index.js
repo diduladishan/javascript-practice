@@ -457,21 +457,68 @@
 // person2.book();
 // // console.log(10);
 
-function person(name, age) {
-  console.log(`my name is ${name} and I'm ${age} years old.`);
-  console.log(this);
-}
+// function person(name, age) {
+//   console.log(`my name is ${name} and I'm ${age} years old.`);
+//   console.log(this);
+// }
 
-const result = person("Didula", 29);
+// const result = person("Didula", 29);
 
-const person2 = (nameTwo, ageTwo) => {
-  console.log(`my name is ${nameTwo} and I'm ${ageTwo} years old.`);
-  console.log(this);
+// const person2 = (nameTwo, ageTwo) => {
+//   console.log(`my name is ${nameTwo} and I'm ${ageTwo} years old.`);
+//   console.log(this);
+// };
+
+// const person3 = function (sdsad, dad) {
+//   dasd;
+// };
+
+// console.log(namew);
+// var namew = "Daniru Din";
+
+import { useState, useEffect } from "react";
+import Spinner from "./Spinner"; // Custom Spinner Component
+
+const ProductList = () => {
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const response = await fetch("/api/products");
+        if (!response.ok) {
+          throw new Error("Failed to fetch products");
+        }
+        const data = await response.json();
+        setProducts(data);
+      } catch (error) {
+        setError(error.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchProducts();
+  }, []);
+
+  if (loading) {
+    return <Spinner />; // Show a spinner while loading
+  }
+
+  if (error) {
+    return <div>Error: {error}</div>; // Show error message if request fails
+  }
+
+  return (
+    <div>
+      <h1>Product List</h1>
+      <ul>
+        {products.map((product) => (
+          <li key={product.id}>{product.name}</li>
+        ))}
+      </ul>
+    </div>
+  );
 };
-
-const person3 = function (sdsad, dad) {
-  dasd;
-};
-
-console.log(namew);
-var namew = "Daniru Din";
