@@ -476,49 +476,22 @@
 // console.log(namew);
 // var namew = "Daniru Din";
 
-import { useState, useEffect } from "react";
-import Spinner from "./Spinner"; // Custom Spinner Component
+import { useAuth } from "../context/AuthContext";
 
-const ProductList = () => {
-  const [products, setProducts] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+const Login = () => {
+  const { login } = useAuth();
 
-  useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        const response = await fetch("/api/products");
-        if (!response.ok) {
-          throw new Error("Failed to fetch products");
-        }
-        const data = await response.json();
-        setProducts(data);
-      } catch (error) {
-        setError(error.message);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchProducts();
-  }, []);
-
-  if (loading) {
-    return <Spinner />; // Show a spinner while loading
-  }
-
-  if (error) {
-    return <div>Error: {error}</div>; // Show error message if request fails
-  }
+  const handleLogin = (role) => {
+    login({ username: "JohnDoe", role });
+  };
 
   return (
     <div>
-      <h1>Product List</h1>
-      <ul>
-        {products.map((product) => (
-          <li key={product.id}>{product.name}</li>
-        ))}
-      </ul>
+      <h2>Login</h2>
+      <button onClick={() => handleLogin("user")}>Login as User</button>
+      <button onClick={() => handleLogin("admin")}>Login as Admin</button>
     </div>
   );
 };
+
+export default Login;
