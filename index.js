@@ -496,9 +496,7 @@
 
 // export default Login;
 
-updateQuantity: (state, action) => {
-  const { id, quantity } = action.payload;
-  state.cartItems = state.cartItems.map((item) =>
-    item.id === id ? { ...item, quantity } : item
-  );
-};
+function Header() {
+  const { onClearPosts } = useContext(PostContext);
+  return <button onClick={onClearPosts}>Clear Posts</button>;
+}
