@@ -476,22 +476,29 @@
 // console.log(namew);
 // var namew = "Daniru Din";
 
-import { useAuth } from "../context/AuthContext";
+// import { useAuth } from "../context/AuthContext";
 
-const Login = () => {
-  const { login } = useAuth();
+// const Login = () => {
+//   const { login } = useAuth();
 
-  const handleLogin = (role) => {
-    login({ username: "JohnDoe", role });
-  };
+//   const handleLogin = (role) => {
+//     login({ username: "JohnDoe", role });
+//   };
 
-  return (
-    <div>
-      <h2>Login</h2>
-      <button onClick={() => handleLogin("user")}>Login as User</button>
-      <button onClick={() => handleLogin("admin")}>Login as Admin</button>
-    </div>
+//   return (
+//     <div>
+//       <h2>Login</h2>
+//       <button onClick={() => handleLogin("user")}>Login as User</button>
+//       <button onClick={() => handleLogin("admin")}>Login as Admin</button>
+//     </div>
+//   );
+// };
+
+// export default Login;
+
+updateQuantity: (state, action) => {
+  const { id, quantity } = action.payload;
+  state.cartItems = state.cartItems.map((item) =>
+    item.id === id ? { ...item, quantity } : item
   );
 };
-
-export default Login;
