@@ -496,7 +496,15 @@
 
 // export default Login;
 
-function Header() {
-  const { onClearPosts } = useContext(PostContext);
-  return <button onClick={onClearPosts}>Clear Posts</button>;
+// function Header() {
+//   const { onClearPosts } = useContext(PostContext);
+//   return <button onClick={onClearPosts}>Clear Posts</button>;
+// }
+
+function calcAge(birthYear) {
+  const now = 2037;
+  const age = now - birthYear;
+  return age;
 }
+
+console.log(age);
