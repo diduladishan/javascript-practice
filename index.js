@@ -501,10 +501,39 @@
 //   return <button onClick={onClearPosts}>Clear Posts</button>;
 // }
 
+// function calcAge(birthYear) {
+//   const now = 2037;
+//   var age = now - birthYear;
+//   return age;
+// }
+
+// console.log(age);
+
+// var name = "Alice";
+
+// function printName() {
+//   console.log(name);
+//   var name = "Bob";
+//   console.log(name);
+// }
+
+// printName();
+// var color = "red";
+
+// function changeColor() {
+//   console.log(color);
+//   var color = "blue";
+//   console.log(color);
+// }
+
+// console.log(color);
+// changeColor();
+
 function calcAge(birthYear) {
-  const now = 2037;
-  const age = now - birthYear;
+  const age = 2037 - birthYear;
+  console.log(firstName);
   return age;
 }
 
-console.log(age);
+const firstName = "Jonas";
+calcAge(1991);
