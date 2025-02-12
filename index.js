@@ -529,11 +529,25 @@
 // console.log(color);
 // changeColor();
 
-function calcAge(birthYear) {
-  const age = 2037 - birthYear;
-  console.log(firstName);
-  return age;
-}
+// function calcAge(birthYear) {
+//   const age = 2037 - birthYear;
+//   console.log(firstName);
+//   return age;
+// }
 
-const firstName = "Jonas";
-calcAge(1991);
+// const firstName = "Jonas";
+// calcAge(1991);
+
+// person("Didula");
+
+// function person(firstName) {
+//   const result = `My first name is ${firstName}`;
+//   console.log(result);
+// }
+
+person("didula");
+
+var person = function (firstName) {
+  const result = `My first name is ${firstName}`;
+  console.log(result);
+};
