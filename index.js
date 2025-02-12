@@ -545,9 +545,22 @@
 //   console.log(result);
 // }
 
-person("didula");
+// person("didula");
 
-var person = function (firstName) {
-  const result = `My first name is ${firstName}`;
+// var person = function (firstName) {
+//   const result = `My first name is ${firstName}`;
+//   console.log(result);
+// };
+
+// const myArray = "Hello";
+
+// const result = myArray.split("");
+// const result2 = result.reverse();
+// console.log(result2);
+
+function reverseString(str) {
+  const result = str.split("").reverse().join();
   console.log(result);
-};
+}
+
+reverseString("Hello how are you?");
