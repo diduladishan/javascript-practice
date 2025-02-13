@@ -565,8 +565,20 @@
 
 // reverseString("Hello how are you?");
 
-function sum(num1, num2) {
-  return num1 + num2;
-}
+// function sum(num1, num2) {
+//   return num1 + num2;
+// }
 
-console.log(sum(3, 7));
+// console.log(sum(3, 7));
+
+// function convertToSeconds(minutes) {
+//   return minutes * 60;
+// }
+
+// console.log(convertToSeconds(5));
+
+const nextNumber = function (currentNumber) {
+  return currentNumber + 1;
+};
+
+console.log(nextNumber(99));
