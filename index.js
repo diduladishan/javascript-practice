@@ -577,8 +577,46 @@
 
 // console.log(convertToSeconds(5));
 
-const nextNumber = function (currentNumber) {
-  return currentNumber + 1;
+// const nextNumber = function (currentNumber) {
+//   return currentNumber + 1;
+// };
+
+// console.log(nextNumber(99));
+
+// const rectangleArea = (width, height) => {
+//   return width * height;
+// };
+
+// console.log(rectangleArea(5, 10));
+// const isEven = (number) => {
+//   if (number % 2 == 0) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// };
+
+// result = isEven(7);
+// console.log(result);
+
+// const maxNumber = (num1, num2) => {
+//   if (num1 > num2) {
+//     return num1;
+//   } else if (num2 > num1) {
+//     return num2;
+//   } else {
+//     return "numbers are equal";
+//   }
+// };
+
+// console.log(maxNumber(2, 5));
+// console.log(maxNumber(6, 3));
+// console.log(maxNumber(3, 3));
+
+const reverseString = (str) => {
+  reversedOutput = str.split("").reverse().join("");
+  return reversedOutput;
 };
 
-console.log(nextNumber(99));
+console.log(reverseString("Hello"));
+console.log(reverseString("Javascript"));
