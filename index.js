@@ -558,9 +558,15 @@
 // const result2 = result.reverse();
 // console.log(result2);
 
-function reverseString(str) {
-  const result = str.split("").reverse().join();
-  console.log(result);
+// function reverseString(str) {
+//   const result = str.split("").reverse().join();
+//   console.log(result);
+// }
+
+// reverseString("Hello how are you?");
+
+function sum(num1, num2) {
+  return num1 + num2;
 }
 
-reverseString("Hello how are you?");
+console.log(sum(3, 7));
