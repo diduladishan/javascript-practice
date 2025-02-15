@@ -613,10 +613,41 @@
 // console.log(maxNumber(6, 3));
 // console.log(maxNumber(3, 3));
 
-const reverseString = (str) => {
-  reversedOutput = str.split("").reverse().join("");
-  return reversedOutput;
-};
+// const reverseString = (str) => {
+//   reversedOutput = str.split("").reverse().join("");
+//   return reversedOutput;
+// };
 
-console.log(reverseString("Hello"));
-console.log(reverseString("Javascript"));
+// console.log(reverseString("Hello"));
+// console.log(reverseString("Javascript"));
+
+// const countVowels = (str) => {
+//   result = str.toLowerCase().split("");
+//   return result;
+// };
+
+// const output = countVowels("Hello");
+// console.log(output);
+
+// const output2 = output.filter(function (char) {
+//   if (
+//     char === "a" ||
+//     char === "e" ||
+//     char === "i" ||
+//     char === "o" ||
+//     char === "u"
+//   ) {
+//     const count = 0;
+//     return count++;
+//   }
+// });
+
+// console.log(output2);
+
+// const inputYear = "1991";
+// result = inputYear + 18;
+// console.log(result);
+// console.log(typeof result);
+
+const fs = require("fs");
+console.log(fs);
