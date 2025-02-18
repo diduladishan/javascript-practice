@@ -690,14 +690,22 @@
 
 // console.log(country);
 
-const numArray = [1, 2, 3, 4, 5];
+// const numArray = [1, 2, 3, 4, 5];
 // console.log(numArray[2]);
 
 //destructure the array
-const [firstElement, thirdElement, fourthElement, fifthElement] = numArray;
+// const [firstElement, thirdElement, fourthElement, fifthElement] = numArray;
 
-console.log(firstElement);
+// console.log(firstElement);
 
-console.log(thirdElement);
-console.log(fourthElement);
-console.log(fifthElement);
+// console.log(thirdElement);
+// console.log(fourthElement);
+// console.log(fifthElement);
+
+const studentNames = ["Shane", "Matilda", "John", "Sarah"];
+
+const [firstName, secondName, ...otherNames] = studentNames;
+
+console.log(firstName);
+console.log(secondName);
+console.log(otherNames);
