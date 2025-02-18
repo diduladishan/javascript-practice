@@ -649,5 +649,20 @@
 // console.log(result);
 // console.log(typeof result);
 
-const fs = require("fs");
-console.log(fs);
+// const fs = require("fs");
+// console.log(fs);
+
+const day = "tuesday1";
+
+switch (day) {
+  case "monday":
+    console.log("Today is monday");
+    break;
+
+  case "tuesday":
+    console.log("today is tuesday");
+    break;
+
+  default:
+    console.log("today is not monday or tuesday");
+}
