@@ -652,17 +652,23 @@
 // const fs = require("fs");
 // console.log(fs);
 
-const day = "tuesday1";
+// const day = "tuesday1";
 
-switch (day) {
-  case "monday":
-    console.log("Today is monday");
-    break;
+// switch (day) {
+//   case "monday":
+//     console.log("Today is monday");
+//     break;
 
-  case "tuesday":
-    console.log("today is tuesday");
-    break;
+//   case "tuesday":
+//     console.log("today is tuesday");
+//     break;
 
-  default:
-    console.log("today is not monday or tuesday");
-}
+//   default:
+//     console.log("today is not monday or tuesday");
+// }
+
+const age = 12;
+
+const result = age > 18 ? "you can drink wine" : "please drink water";
+
+console.log(result);
