@@ -706,6 +706,9 @@ const studentNames = ["Shane", "Matilda", "John", "Sarah"];
 
 const [firstName, secondName, ...otherNames] = studentNames;
 
-console.log(firstName);
-console.log(secondName);
-console.log(otherNames);
+// console.log(firstName);
+// console.log(secondName);
+// console.log(otherNames);
+
+const updatedNames = [...studentNames, "Ricky"];
+console.log(updatedNames);
