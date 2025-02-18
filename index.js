@@ -667,8 +667,25 @@
 //     console.log("today is not monday or tuesday");
 // }
 
-const age = 12;
+// const age = 12;
 
-const result = age > 18 ? "you can drink wine" : "please drink water";
+// const result = age > 18 ? "you can drink wine" : "please drink water";
 
-console.log(result);
+// console.log(result);
+
+const person = {
+  name: "John Doe",
+  age: 25,
+  job: "software Engineer",
+  country: "Germany",
+};
+
+// console.log(person.name);
+// console.log(person.age);
+// console.log(person.country);
+
+const { name, country } = person;
+
+console.log(name);
+
+console.log(country);
