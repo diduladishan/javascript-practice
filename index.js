@@ -702,13 +702,29 @@
 // console.log(fourthElement);
 // console.log(fifthElement);
 
-const studentNames = ["Shane", "Matilda", "John", "Sarah"];
+// const studentNames = ["Shane", "Matilda", "John", "Sarah"];
 
-const [firstName, secondName, ...otherNames] = studentNames;
+// const [firstName, secondName, ...otherNames] = studentNames;
 
 // console.log(firstName);
 // console.log(secondName);
 // console.log(otherNames);
 
-const updatedNames = [...studentNames, "Ricky"];
-console.log(updatedNames);
+// const updatedNames = [...studentNames, "Ricky"];
+// console.log(updatedNames);
+
+const fruits = {
+  orange: "orange color",
+  strawberry: "red",
+  mango: "green",
+  banana: "yellow",
+};
+
+const fruits2 = {
+  apple: "red and green",
+};
+
+const { orange, mango, ...otherFruits } = fruits;
+console.log(orange);
+console.log(mango);
+console.log(otherFruits);
