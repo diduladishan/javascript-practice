@@ -673,19 +673,31 @@
 
 // console.log(result);
 
-const person = {
-  name: "John Doe",
-  age: 25,
-  job: "software Engineer",
-  country: "Germany",
-};
+// const person = {
+//   name: "John Doe",
+//   age: 25,
+//   job: "software Engineer",
+//   country: "Germany",
+// };
 
 // console.log(person.name);
 // console.log(person.age);
 // console.log(person.country);
 
-const { name, country } = person;
+// const { name, country } = person;
 
-console.log(name);
+// console.log(name);
 
-console.log(country);
+// console.log(country);
+
+const numArray = [1, 2, 3, 4, 5];
+// console.log(numArray[2]);
+
+//destructure the array
+const [firstElement, thirdElement, fourthElement, fifthElement] = numArray;
+
+console.log(firstElement);
+
+console.log(thirdElement);
+console.log(fourthElement);
+console.log(fifthElement);
