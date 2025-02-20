@@ -729,12 +729,19 @@
 // console.log(mango);
 // console.log(otherFruits);
 
-const name = "di";
+// const name = "di";
 
-const obj = {
-  name: "Alice",
-  greet: () => {
-    console.log(this); // `this` is not `obj`, it's the global object
-  },
-};
-obj.greet(); // undefined (or error in strict mode)
+// const obj = {
+//   name: "Alice",
+//   greet: () => {
+//     console.log(this);
+//   },
+// };
+// obj.greet();
+
+function show() {
+  const myName = "Didula";
+  console.log(this);
+  console.log(this.myName);
+}
+show(); // In browsers: window, in strict mode: undefined
