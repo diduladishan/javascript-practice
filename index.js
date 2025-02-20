@@ -1,4 +1,4 @@
-// "use strict";
+"use strict";
 
 // // var x = 10;
 // // var x = 20;
@@ -713,18 +713,28 @@
 // const updatedNames = [...studentNames, "Ricky"];
 // console.log(updatedNames);
 
-const fruits = {
-  orange: "orange color",
-  strawberry: "red",
-  mango: "green",
-  banana: "yellow",
-};
+// const fruits = {
+//   orange: "orange color",
+//   strawberry: "red",
+//   mango: "green",
+//   banana: "yellow",
+// };
 
-const fruits2 = {
-  apple: "red and green",
-};
+// const fruits2 = {
+//   apple: "red and green",
+// };
 
-const { orange, mango, ...otherFruits } = fruits;
-console.log(orange);
-console.log(mango);
-console.log(otherFruits);
+// const { orange, mango, ...otherFruits } = fruits;
+// console.log(orange);
+// console.log(mango);
+// console.log(otherFruits);
+
+const name = "di";
+
+const obj = {
+  name: "Alice",
+  greet: () => {
+    console.log(this); // `this` is not `obj`, it's the global object
+  },
+};
+obj.greet(); // undefined (or error in strict mode)
