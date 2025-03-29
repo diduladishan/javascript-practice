@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 
 // // var x = 10;
 // // var x = 20;
@@ -739,9 +739,13 @@
 // };
 // obj.greet();
 
-function show() {
-  const myName = "Didula";
-  console.log(this);
-  console.log(this.myName);
-}
-show(); // In browsers: window, in strict mode: undefined
+// function show() {
+//   const myName = "Didula";
+//   console.log(this);
+//   console.log(this.myName);
+// }
+// show(); // In browsers: window, in strict mode: undefined
+
+document.querySelector("button").addEventListener("click", function () {
+  console.log(this); // Refers to the button element
+});
