@@ -747,5 +747,5 @@
 // show(); // In browsers: window, in strict mode: undefined
 
 document.querySelector("button").addEventListener("click", function () {
-  console.log(this); // Refers to the button element
+  console.log(this); // Refers to the button elements
 });
