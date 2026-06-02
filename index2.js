@@ -5,3 +5,5 @@ const fruits = {
   mango: "green",
   banana: "yellow",
 };
+
+console.log("hi")
