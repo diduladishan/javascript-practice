@@ -751,3 +751,14 @@ document.querySelector("button").addEventListener("click", function () {
 });
 
 console.log("Helloa");
+
+document.querySelector("button").addEventListener("click", function () {
+  console.log(this); // Refers to the button elements
+});
+
+console.log("Helloa");
+document.querySelector("button").addEventListener("click", function () {
+  console.log(this); // Refers to the button elements
+});
+
+console.log("Helloa");
